@@ -7,8 +7,8 @@ bloque
 */
 
 /* alt shift + a para insertar comentario */
-let edad = Number(prompt("Ingrese un número"))
-alert(10 + edad)
+let names = prompt("Ingresa tu nombre")
+alert( Hello, + "there, " + names)
 
 
 /* parseInt(edad)
