@@ -1,0 +1,2 @@
+
+let pais = prompt
