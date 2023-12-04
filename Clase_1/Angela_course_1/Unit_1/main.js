@@ -43,7 +43,31 @@ var d = 6 / 2;
 Modulo
 var e = 9 % 6; */
 
-var dogAge = prompt("How old is your dog?")
+/* var dogAge = prompt("How old is your dog?")
 var humanAge = ((dogAge - 2) * 4 ) + 21
 
-alert("Your dog is " + humanAge + " human years old")
+alert("Your dog is " + humanAge + " human years old") */
+
+/* var ageInYears = parseInt(prompt("How old are you?"));
+var yearsTo90 = 90 - ageInYears 
+
+var ageInMonths = Math.floor(ageInYears * 12);
+
+var ageInDays = Math.floor(ageInYears * 365);
+
+alert("Your age is " + ageInYears + " Years" + ", or " + ageInMonths + " Months, or " + ageInDays + " Days");
+
+alert("You are " + yearsTo90 + " years away from 90");
+alert(" You are " + ((90*12) - ageInMonths) + " months away from 90")
+alert(" You are " + ((90*365) - ageInDays) + " days away from 90")
+ */
+
+/* BMI Calculator */
+function bmiCalculator(weight, height) {
+    var bmi = weight / (height * height);
+    return Math.round(bmi);
+}
+
+var bmi = bmiCalculator(65, 1.8)
+alert("Your BMI is " + bmi);
+
