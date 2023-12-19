@@ -1,0 +1,59 @@
+
+
+#productos {
+    font-size: 24px;
+    color: #4CAF50;
+}
+
+#maquina {
+    margin: 5rem;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+}
+
+.producto {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.producto:hover {
+    background-color: #45a049;
+}
+
+#pantalla {
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+#comprar {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #45a049;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.no-style-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#comprar:hover {
+    background-color: #4CAF50;
+}
