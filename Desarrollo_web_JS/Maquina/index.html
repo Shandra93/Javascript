@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Máquina Expendedora</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./Css/Styles.css">   
 </head>
 <body>
     <div id="maquina">
+        <div id="carrito">
+            <h1>Carrito de Compras</h1>
+            <ul id="listaProductos" class="no-style-list"></ul>
+        </div>
         <div id="productosContainer">
             <button class="producto" data-precio="1.50">Sabritas - 1.50</button>
             <button class="producto" data-precio="2.00">Coca-Cola - 2.00</button>
@@ -17,15 +21,14 @@
             <button class="producto" data-precio="1.25">Café - 1.25</button>
             <!-- Agrega más productos según sea necesario -->
         </div>
-        <div id="carrito">
-            <h2>Carrito de Compras</h2>
-            <ul id="listaProductos" class="no-style-list"></ul>
-        </div>
         <div id="pantalla">
             <p>Total: <span id="total">0.00</span></p>
             <p>Cambio: <span id="cambio">0.00</span></p>
         </div>
-        <button id="comprar">Comprar</button>
+        <div id="botonesContainer">
+            <button id="comprar">Comprar</button>
+            <button id="limpiarCarrito">Limpiar Carrito</button>
+        </div>
     </div>
     <script src="main.js"></script>
 </body>

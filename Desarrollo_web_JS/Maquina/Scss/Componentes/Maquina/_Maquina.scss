@@ -13,8 +13,8 @@
     text-align: center;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
     grid-gap: 15px;
 }
 
@@ -22,7 +22,7 @@
     margin: 5px;
     padding: 10px 20px;
     font-size: 18px;
-    background-color: #4CAF50;
+    background-image: linear-gradient(to top, $Primary-dark 20%, $Black 100%);
     color: white;
     border: none;
     cursor: pointer;
@@ -30,18 +30,33 @@
 }
 
 .producto:hover {
-    background-color: #45a049;
+    background-image: linear-gradient(to bottom, $Primary-dark 20%, $Black 100%);
 }
 
 #pantalla {
     margin: 20px 0;
     font-size: 16px;
+
+    p {
+        color: $Black;
+    }
 }
+
 
 #comprar {
     padding: 10px 20px;
     font-size: 18px;
-    background-color: #45a049;
+    background-image: linear-gradient(to top, $Primary-dark 20%, $Black 100%);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#limpiarCarrito {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-image: linear-gradient(to top, $Primary-dark 20%, $Black 100%);
     color: white;
     border: none;
     cursor: pointer;
@@ -55,5 +70,19 @@
 }
 
 #comprar:hover {
-    background-color: #4CAF50;
+    background-image: linear-gradient(to bottom, $Primary-dark 20%, $Black 100%);
+}
+
+#botonesContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+#comprar, #limpiarCarrito {
+    width: 48%; /* Establece el ancho de los botones según tus preferencias */
+    background-image: linear-gradient(to top, $Primary-dark 20%, $Black 100%);
+}
+
+#limpiarCarrito:hover {
+    background-image: linear-gradient(to bottom, $Primary-dark 20%, $Black 100%);
 }
