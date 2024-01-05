@@ -1,6 +1,6 @@
 function bmiCalculator() {
     var weight = prompt("Enter your weight in kilograms: ");
-    var height = prompt("Enter your height in meters: Ex: 1.8m");
+    var height = prompt("Enter your height in meters, Ex: 1.8m");
 
     weight = parseFloat(weight);
     height = parseFloat(height);
@@ -10,23 +10,24 @@ function bmiCalculator() {
         return "Invalid input. Please enter valid numbers for weight and height.";
     }
 
-    // Hace el calculo del indice de masa corportal
+    // Hace el calculo del indice de masa corporal
     let bmi = weight / (height * height);
     let interpretation;
 
     if (bmi < 18.5) {
-        interpretation = "You are underweight, keep it going";
-    } else if (bmi >= 18.5 && bmi < 24.9) {
-        interpretation = "You are at normal weight";
-    } else if (bmi >= 25 && bmi < 29.9) {
-        interpretation = "Be careful, you are overweight";
+        interpretation = "You are underweight!";
+    } else if (bmi >= 18.5 && bmi <= 24.9) {
+        interpretation = "You are normal";
+    } else if (bmi >= 25 && bmi <= 29.9) {
+        interpretation = "You are overweight";
+    } else if (bmi >= 30 && bmi <= 34.9) {
+        interpretation = "You are obese";
     } else {
-        interpretation = "Danger, you are at obesity range";
+        interpretation = "You are extremely obese";
     }
 
-    return interpretation;
+    console.log(interpretation);
+    alert(interpretation);
 }
 
-// Llama la funcion y la registra dentro de la variable de resultado
-var result = bmiCalculator();
-console.log(result);
+bmiCalculator();
