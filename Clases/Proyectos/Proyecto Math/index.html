@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Aleatorio </title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div id="Calculadora">
+    <h1> Calculadora </h1>
+    <div id="Pantallas">
+        <input type="text" class="input" id="input1"> <input type="text" class="input" id="input2"> 
+    </div>
+
+    <div id="funcionesCalculadora">
+        <button onclick="Suma()"> + </button>         <button> - </button>
+        <button onclick=""> * </button>         <button> / </button>
+    </div>
+
+    <div id="funcionesExtras">
+        <button onclick=""> Potencia </button>         <button> Raiz </button>
+        <button onclick=""> Absoluto </button>         <button> Random </button>
+    </div>
+    
+    <h2> Resultados: <span id="textoAleatorio"> --- </span></h2>
+
+    <div>
+        <button onclick=""> Round </button>         <button> Floor </button>
+        <button onclick=""> Ceil </button>      
+    </div>
+
+
+    <p><button onclick="crearAleatorio()"> Numero </button></p> 
+</div>
+<script src= "main.js"></script>
+</body>
+</html>

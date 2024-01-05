@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body onload="comenzarReloj()">
+    <div id="Caja">
+
+        <h1><span id="cuentaRegresiva"></span> Segundos restantes <br> 
+            Bienvenido al test</h1>
+
+        <h3>Pregunta 1</h3>
+        <p>Cual es la capital de Islandia?</p>
+        <input type="text" id="respuesta1" class="respuesta">
+
+        <h3>Pregunta 2</h3>
+        <p>Cual es el código de aeropuerto de japon?</p>
+        <input type="text" id="respuesta2" class="respuesta">
+
+        <h3>Pregunta 3</h3>
+        <p>Cuanto es 1 + 1?</p>
+        <input type="text" id="respuesta3" class="respuesta">
+
+        <h3>Pregunta 4</h3>
+        <p>La luna es de queso?</p>
+        <input type="text" id="respuesta4" class="respuesta">
+
+        <h3>Pregunta 5</h3>
+        <p>Te gusta el queso?</p>
+        <input type="text" id="respuesta5" class="respuesta">
+
+        <div class="Botones">
+            <button onclick="finalizado()" class="button">Termine</button>
+            <button onclick="volverAIntentarlo()" class="button">Reiniciar</button>
+        </div>
+
+        <audio id="audioFinal" type="audio/mpeg"><source src="./gameover.mp3">Sonido no habilitado</audio>
+    </div>
+    <script src="./Main.js"></script>
+</body>
+</html>
