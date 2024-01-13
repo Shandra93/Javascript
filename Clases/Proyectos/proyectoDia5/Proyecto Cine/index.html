@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>entrada</title>
+    <link rel="stylesheet" href="./style.css">
+<!--     <script src="./main.js"></script>
+ -->
+</head>
+<body>
+    <div>
+        <h1> Bienvenido al Cine </h1>
+        <p> Cual es tu edad?</p>
+        <input id="edad" type="number" min="1" max="99">
+        <br>
+        <br>
+        
+        <button onclick="recomendacion('comedia')"> Comedia </button>
+        <button onclick="recomendacion('drama')"> Drama </button>
+        <button onclick="recomendacion('musical')"> musical </button>
+        <button onclick="recomendacion('crimen')"> crimen </button>
+
+    <!-- 
+        menores de 13
+        menor de 16
+        16 o mayor -->
+
+<!--     <button onclick="consultarPrecio()"> Precio </button>-->
+    <h3> La recomendacion es: </h3>
+    <h3 id="recomendacion">  </h3>
+</div>
+    
+    <script src="./main.js"></script>
+</body>
+</html>

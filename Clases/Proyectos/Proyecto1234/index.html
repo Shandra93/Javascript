@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitrina de Productos</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="container" id="producto1">
+        <h1 id="tituloPagina"> Bienvenido a la maquina </h1>
+        <h3> Elige tu producto </h3>
+        <div class="producto">
+            <img src="./Assets/coquita.jpg" alt="Producto 1">
+            <div class="producto-info">
+                <div class="nombre-producto">Producto 1</div>
+                <div class="precio-producto"> $19.99 </div>
+                <div class="info-adicional"> Coca cola radioactiva </div>
+                <button onclick="guardarProducto('Producto 1', 19.99)">Agregar al carrito</button>
+            </div>
+        </div>
+
+        <div class="producto" id="producto2">
+            <img src="./Assets/coquita.jpg" alt="Producto 2">
+            <div class="producto-info">
+                <div class="nombre-producto">Coca de Piña</div>
+                <div class="precio-producto">$29.99</div>
+                <div class="info-adicional"> Es legendaria </div>
+                <button onclick="guardarProducto('Coca de Piña', 29.99)">Agregar al carrito</button>
+            </div>
+        </div>
+
+        <div class="producto" id="producto3">
+            <img src="./Assets/coquita.jpg" alt="Producto 3">
+            <div class="producto-info">
+                <div class="nombre-producto">Coca de fresa</div>
+                <div class="precio-producto">$39.99</div>
+                <div class="info-adicional">Es una excelente cosa</div>
+                <button onclick="guardarProducto('Coca de fresa', 39.99)">Agregar al carrito</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./scripts.js"></script>
+</body>
+</html>

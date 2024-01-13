@@ -3,36 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Aleatorio </title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+    <script src="./calculadora.js"></script>
+    <link rel="Stylesheet" href="./style.css">
 </head>
 <body>
-<div id="Calculadora">
-    <h1> Calculadora </h1>
-    <div id="Pantallas">
-        <input type="text" class="input" id="input1"> <input type="text" class="input" id="input2"> 
+    <h1>Calculadora</h1>
+    <input type="text" id="campo1">
+    <input type="text" id="campo2">
+    <br/>
+    <br/>
+    <button onclick="suma()"> + </button>
+    <button onclick="resta()"> - </button>
+    <button onclick="multiplicacion()"> * </button>
+    <button onclick="division()"> / </button>
+    <br/>
+    <div class="doble">
+        <button onclick="sqrt()"> raiz </button>
+        <button onclick="pow()"> pow </button>
+        <button onclick="absoluto()"> Abs </button>
+        <button onclick="random()"> Random </button>
     </div>
-
-    <div id="funcionesCalculadora">
-        <button onclick="Suma()"> + </button>         <button> - </button>
-        <button onclick=""> * </button>         <button> / </button>
-    </div>
-
-    <div id="funcionesExtras">
-        <button onclick=""> Potencia </button>         <button> Raiz </button>
-        <button onclick=""> Absoluto </button>         <button> Random </button>
+    <h3> Resultado </h3>
+    <input type="text" id="resultado">
+    <br/>
+    <br/>
+    <br/>
+    <div id="triple">    
+        <button onclick="redondeo()"> round </button>
+        <button onclick="piso()"> floor </button>
+        <button onclick="techo()"> ceil </button>
     </div>
     
-    <h2> Resultados: <span id="textoAleatorio"> --- </span></h2>
-
-    <div>
-        <button onclick=""> Round </button>         <button> Floor </button>
-        <button onclick=""> Ceil </button>      
-    </div>
-
-
-    <p><button onclick="crearAleatorio()"> Numero </button></p> 
-</div>
-<script src= "main.js"></script>
 </body>
 </html>

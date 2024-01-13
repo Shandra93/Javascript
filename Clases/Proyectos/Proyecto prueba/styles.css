@@ -1,0 +1,126 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+label {
+    margin-bottom: 8px;
+    color: #555;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#calcularButton {
+    margin-top: 1rem;
+}
+
+#moneda {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+#tasaInteres {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#frecuenciaPago {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+button {
+    background-image: linear-gradient(to top, #09ff00 10%, #fdfdfd 80%);
+    padding: 12px;
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-image: linear-gradient(to top, #ff0000 20%, #ff7b00 100%);
+}
+
+.resultado {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+.container {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 800px;
+}
+
+.product {
+    border-radius: 5px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+
+.product img {
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+}
+
+.product-info {
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+.product h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+
+}
+
+.product p {
+    margin: 0;
+}
+
+.price {
+    font-weight: bold;
+    color: #f00;
+}
