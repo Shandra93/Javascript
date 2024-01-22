@@ -51,11 +51,14 @@ body {
     max-width: none;
 }
 
-
+#catalogoProductos .producto.seleccionado {
+    background-color: #f0f0f0; 
+    border: 2px solid var(--primary-color); 
+}
 
 #catalogoProductos,
-#totalCarrito,
-#calculadora {
+#calculadora,
+#resultado {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
@@ -92,8 +95,17 @@ body {
     font-size: x-large;
 }
 
+#montoTotal {
+    display: none;
+}
+
 #calculadora #montoTotal {
     width: 94%;
+}
+
+#calcularButton:disabled {
+    background-color: #ccc; 
+    cursor: not-allowed;
 }
 
 #calculadora button:hover {
@@ -147,6 +159,22 @@ body {
     background-color: #f0f0f0;
 }
 
+#totalCarrito {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 10px;
+    flex: 1;
+    margin: 10px;
+    max-width: 400px;
+    display: none; 
+}
+
+
 #catalogoProductos img,
 #totalCarrito img {
     max-width: 100%;
@@ -175,3 +203,32 @@ body {
     max-height: 100%;
     object-fit: cover;
 }
+
+#carrito {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 10px;
+    flex: 1;
+    margin: 10px;
+    max-width: 400px;
+}
+
+#carrito h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#carrito p {
+    text-align: center;
+    font-size: large;
+    color: #ff0000;
+    margin-bottom: 10px;
+}
+
+
